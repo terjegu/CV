@@ -1,0 +1,160 @@
+% cv.tex
+% $Id: cv.tex,v 1.10 05/08/2009
+%
+% LaTeX Curriculum Vitae
+%
+% Copyright (C) 2008 Terje Gundersen
+%
+%%---------------------------------------------------------------------------%
+
+\documentclass[overlapped,line,a4paper]{res}
+
+\usepackage{ifpdf}
+\usepackage[utf8]{inputenc}
+
+\ifpdf%
+  \usepackage[pdftex]{hyperref}
+\else%
+  \usepackage[hypertex]{hyperref}
+\fi%
+
+\hypersetup{
+  a4paper,
+  colorlinks,
+  urlcolor=black,
+  pdfpagemode=none,
+  pdftitle={Curriculum Vitae},
+  pdfauthor={Terje Gundersen},
+  pdfcreator={Terje Gundersen 13/02/2009},
+  pdfsubject={Curriculum Vitae},
+  pdfkeywords={Signalbehandling KOMTEK MTKOM kommunikasjonsteknologi multimedia NTNU Tandberg Jernbaneverket Windows MacOSX linux unix C RubyonRails JAVA Python Matlab JSP HTML}
+}
+
+%%===========================================================================%%
+
+\begin{document}
+
+%---------------------------------------------------------------------------
+% Document Specific Customizations
+
+% Make lists without bullets and with no indentation
+\setlength{\leftmargini}{0em}
+\renewcommand{\labelitemi}{}
+
+% Use large bold font for printed name at top of pages
+\renewcommand{\namefont}{\large\textbf}
+
+%---------------------------------------------------------------------------
+
+\name{Terje Gundersen \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad $\;$ 26.11.1986}
+
+\begin{resume}
+
+\begin{ncolumn}{2}
+	Hjemmeadresse:				& Studieadresse:\\
+	Kongsskogen 44		    & Nedre Møllenbergs gate 19a\\     
+	1385 ASKER				    &7014 Trondheim\\      
+	\tt{terjegu@gmail.com}	 	&\tt{terjegu@stud.ntnu.no}\\
+	Tlf: (+47) 46 673 376 	& \\
+\end{ncolumn}
+
+%---------------------------------------------------------------------------
+
+\section{\bf{Utdannelse}}
+
+\begin{format}
+\title{l}\dates{r}\\
+\employer{l}\location{r}\\
+\body\\
+\end{format}
+
+\title{Master of Science}
+\employer{Kommunikasjonsteknologi}
+\location{NTNU}
+\dates{2010}
+\begin{position}
+Har fullført fire år ved NTNU og har med det ett år igjen av studiet ved NTNU. Jeg har valgt studieretningen signalbehandling, med fordypning i lyd- og bildebehandling og skriver master innenfor taleteknologi.
+\end{position}
+
+\title{Examen Artium}
+\employer{Allmenne fag}
+\location{Asker VGS}
+\dates{2005}
+\begin{position}
+På Asker videregående skole tok jeg generell studiekompetanse med fordypningsfagene 3MX, 3FY og 3KJ.
+\end{position}
+
+%---------------------------------------------------------------------------
+
+\section{\bf{Jobberfaring}}
+
+\begin{format}
+\title{l}\dates{r}\\
+\employer{l}\location{r}\\
+\body\\
+\end{format}
+
+\title{Utvikler}
+\employer{NTNU}
+\location{Trondheim}
+\dates{sommeren 2009}
+\begin{position}
+	På NTNU jobbet jeg på et prosjekt på IET-instituttet som gikk ut på å lage en demonstrasjon av taleteknologi for Forskningsrådet som ble vist frem på Forskningstorget i Oslo og Trondheim høsten 2009. Jobben min var å lage talegjenkjenneren til et talestyrt dataspill.
+\end{position}
+
+\title{Utvikler}
+\employer{Tandberg}
+\location{Lysaker}
+\dates{sommeren 2008}
+\begin{position}
+	Hos Tandberg jobbet jeg på kvalitetssikrings avdelingen (QA) hvor jeg laget en nettside i \emph{Ruby on Rails} for å presentere testresultater fra en database. Jeg laget også \emph{Ruby}-script for å populere databasen.
+\end{position}
+
+\title{Nettoperatør}
+\employer{Jernbaneverket}
+\location{Trondheim}
+\dates{2007--2008}
+\begin{position}
+	Hos Jernbaneverket hadde jeg deltidsjobb i ett og et halvt år hvor jeg overvåket GSM-R nettet deres. Det er deres eget GSM-nett som brukes av alle togførere, togledere og vedlikeholdsarbeidere som jobber for Jernbaneverket. Jobben besto av å overvåke og feilsøke når feil oppsto.
+\end{position}
+
+% \title{Butikkmedarbeider}
+% \employer{Rimi}
+% \location{Asker}
+% \dates{2002--2005}
+% \begin{position}
+% 	Jobbet først på lageret og senere i kassa da jeg ble 18. Jobbet også med ``post i butikk''.
+% \end{position}
+% 
+% \title{Hjelpetrener}
+% \employer{Asker Ski Klubb}
+% \location{Asker}
+% \dates{2000--2002}
+% \begin{position}
+% 	Jobbet som hjelpetrener i barneidrett/allidrett for barn mellom 5 og 11 år. 
+% \end{position}
+
+%---------------------------------------------------------------------------
+
+\section{\bf{Tillitsverv}}
+
+\begin{itemize}
+	\item Studentassistent, matematikk 4D, høsten 2009
+	\item Studentassistent, digitalteknikk med kretsteknikk, våren 2009
+	\item Studentassistent, matematikk 4D, høsten 2008
+	\item Instituttillitsrepresentant for ITEM i studentrådet ved IME-fakultetet, 2008--2009
+	\item Studentrepresentant i studieprogramrådet for kommunikasjonsteknologi, 2008--2009
+\end{itemize}
+
+%---------------------------------------------------------------------------
+
+\section{\bf{Dataferdigheter}}
+\begin{description}
+	\item[Programmeringspråk:] JAVA, C/C++, Python, Ruby on Rails, HTML, JSP, CSS, AJAX, MySQL
+	\item[Verktøy:] MatLab, HTK, \LaTeX 
+	\item[Operativsystem:] Windows, Mac OS X, Unix
+\end{description}
+
+\end{resume}
+
+\end{document}
